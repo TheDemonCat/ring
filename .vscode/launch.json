@@ -1,0 +1,30 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Отладка 1Script",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["edt", "import", "--version", "8.3.12.1595", "--baseProjectNamebaseProjectName", "BaseProjectName", "--project", "Project", "--project-name", "ProjectName" , "--configuration-files", "", ],
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "debugPort": 2801,
+            "protocol": "internal"
+        },
+        {
+            "name": "Отладка Импорта проекта",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["edt", "workspace", "import", "--version", "8.3.12.1595", "--project", "C:\\EDT_Converter\\tests\\fixtures\\EDT", "--configurationFiles", "C:\\EDT_Converter\\tests\\fixtures\\1C", "--workspaceLocation", "C:\\EDT_Converter\\build\\workspace" ],
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "debugPort": 2801,
+            "protocol": "internal"
+        }
+    ]
+}
